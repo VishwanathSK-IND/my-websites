@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f4f4f9;
+    }
+    .container {
+      width: 1200px;
+      height: 1000px;
+      border: 7px solid orange;
+      display: grid;
+      grid-template-rows: 250px 1fr; 
+      grid-template-columns: 1fr;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+     .header {
+        padding-top:50px;
+      border: 7px solid purple;
+    }
+     .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      gap: 40px;
+    }
+   .left {
+      border: 7px solid green;
+      margin-top: -5px; 
+    }
+    .middle {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      margin-top: -5px; 
+    }
+    .middle .top {
+      border: 7px solid blue;
+      border-bottom: none; 
+    }
+    .middle .bottom {
+      border: 7px solid blue; 
+    }
+    .right {
+      border: 7px solid black;
+      margin-top: -5px; 
+    }
+    @media (max-width: 900px) {
+      .container {
+        width: 90vw;
+        height: auto;
+      }
+      .content {
+        grid-template-columns: 1fr 1fr;
+      }
+      .right {
+        grid-column: span 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+      .right {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <div class="content">
+      <div class="left"></div>
+      <div class="middle">
+        <div class="top"></div>
+        <div class="bottom"></div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </div>
+</body>
+</html>
