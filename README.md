@@ -427,7 +427,7 @@
                             <p>Rotating Ferris wheel animation with color-changing cabins using CSS transforms</p>
                                 <div class="project-links">
                                 <a href="/home/vishwanathsk/Desktop/htmlassignments/10ferriswheel.html" target="_blank"><i class="fab fa-github">Live Demo</i></a>
-                                <a href="#"target="_blank"><i class="fab fa-github">View Code</i></a>
+                                <a href="#" target="_blank"><i class="fab fa-github">View Code</i></a>
                             </div>
                         </div>
                     </article>
